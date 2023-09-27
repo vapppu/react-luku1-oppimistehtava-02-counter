@@ -6,11 +6,8 @@ const Display = ({counter}) => {
   )
 }
 
-const Button = ({ handleClick, text}) => {
-  return (
-    <button onClick={handleClick}>{text}</button>
-  )
-}
+const Button = ({ handleClick, text}) => <button onClick={handleClick}>{text}</button>
+
 
 const App = () => {
   const [ counter, setCounter ] = useState(0)
